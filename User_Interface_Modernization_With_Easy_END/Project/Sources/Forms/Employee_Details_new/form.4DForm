@@ -1,0 +1,161 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"top": 10,
+					"left": 10,
+					"width": 120,
+					"height": 17,
+					"textAlign": "right",
+					"text": "First Name"
+				},
+				"firstName_field": {
+					"type": "input",
+					"top": 10,
+					"left": 140,
+					"width": 200,
+					"height": 17,
+					"dataSource": "Form:C1466.entity.firstName",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"lastName_field": {
+					"type": "input",
+					"top": 40,
+					"left": 140,
+					"width": 200,
+					"height": 17,
+					"dataSource": "Form:C1466.entity.lastName",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 40,
+					"left": 10,
+					"width": 120,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Last Name"
+				},
+				"phone_field": {
+					"type": "input",
+					"top": 70,
+					"left": 140,
+					"width": 200,
+					"height": 17,
+					"dataSource": "Form:C1466.entity.more_infos.phone",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 70,
+					"left": 10,
+					"width": 120,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Phone"
+				},
+				"Check Box": {
+					"type": "checkbox",
+					"top": 10,
+					"left": 614,
+					"width": 66,
+					"height": 17,
+					"sizingX": "move",
+					"dataSource": "Form:C1466.entity.more_infos.fired=True:C214",
+					"text": "Fired",
+					"fontWeight": "bold",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"method": "method.4dm",
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

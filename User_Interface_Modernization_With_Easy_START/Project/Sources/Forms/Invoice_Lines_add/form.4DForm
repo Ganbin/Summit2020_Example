@@ -1,0 +1,201 @@
+﻿{
+	"destination": "detailScreen",
+	"shared": true,
+	"formSizeAnchor": "_setSize",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"quantity": {
+					"type": "input",
+					"top": 167,
+					"left": 182,
+					"width": 116,
+					"height": 30,
+					"dataSourceTypeHint": "number",
+					"textAlign": "right",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 24,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"placeholder": "Quantity",
+					"numberFormat": "###'##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/quantity.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onAfterEdit"
+					]
+				},
+				"FLabel_obj": {
+					"type": "input",
+					"top": 293,
+					"left": 12,
+					"width": 190,
+					"height": 21,
+					"visibility": "hidden",
+					"stroke": "#191970",
+					"fontFamily": "Verdana",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onAfterEdit"
+					]
+				},
+				"_setSize": {
+					"type": "rectangle",
+					"top": 241,
+					"left": 294,
+					"width": 30,
+					"height": 30,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"sizingY": "move",
+					"fill": "#DC143C",
+					"stroke": "transparent"
+				},
+				"Text": {
+					"type": "text",
+					"top": 0,
+					"left": 0,
+					"width": 321,
+					"height": 38,
+					"stroke": "#191970",
+					"textAlign": "center",
+					"fontFamily": "verdana",
+					"fontSize": 30,
+					"fontWeight": "bold",
+					"text": "New Invoice Line"
+				},
+				"product_label": {
+					"type": "input",
+					"top": 66,
+					"left": 14,
+					"width": 190,
+					"height": 21,
+					"dataSource": "\"Product\"",
+					"stroke": "#191970",
+					"fontFamily": "Verdana",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onAfterEdit"
+					]
+				},
+				"product_name": {
+					"type": "dropdown",
+					"top": 93,
+					"left": 14,
+					"width": 284,
+					"height": 35,
+					"focusable": false,
+					"fontFamily": "Verdana",
+					"fontSize": 16,
+					"method": "ObjectMethods/product_name.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"save_btn": {
+					"type": "button",
+					"top": 247,
+					"left": 224,
+					"width": 96,
+					"height": 20,
+					"text": "Save",
+					"focusable": false,
+					"method": "ObjectMethods/save_btn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"price": {
+					"type": "input",
+					"top": 167,
+					"left": 14,
+					"width": 156,
+					"height": 30,
+					"dataSourceTypeHint": "number",
+					"textAlign": "right",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 24,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"placeholder": "Price",
+					"numberFormat": "###'###'##0 $",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/price.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onAfterEdit"
+					]
+				}
+			}
+		}
+	]
+}

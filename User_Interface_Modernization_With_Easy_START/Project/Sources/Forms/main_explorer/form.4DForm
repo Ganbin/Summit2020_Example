@@ -1,0 +1,270 @@
+﻿{
+	"destination": "detailScreen",
+	"formSizeAnchor": "Rectangle",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1100,
+					"height": 700,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"stroke": "transparent"
+				}
+			}
+		},
+		{
+			"objects": {
+				"PB": {
+					"type": "input",
+					"top": 661,
+					"left": 236,
+					"width": 864,
+					"height": 39,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"dataSourceTypeHint": "picture",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 24,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "custom",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onAfterEdit"
+					]
+				},
+				"modules_lb": {
+					"type": "listbox",
+					"top": 80,
+					"left": 0,
+					"width": 235,
+					"height": 150,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"hideSystemHighlight": true,
+					"showHeaders": false,
+					"dataSource": "Form:C1466.modules",
+					"currentItemSource": "Form:C1466.selectedModule",
+					"metaSource": "lb_meta ",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fontFamily": "Verdana",
+					"fontSize": 12,
+					"method": "ObjectMethods/modules_lb.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470.name",
+							"width": 235,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"fontFamily": "Verdana",
+							"fontSize": 18,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Header1",
+								"fontFamily": "Verdana",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer1",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Verdana",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 3,
+					"left": 10,
+					"width": 718,
+					"height": 57,
+					"stroke": "#191970",
+					"fontFamily": "Verdana",
+					"fontSize": 56,
+					"fontWeight": "bold",
+					"text": "DATA EXPLORER"
+				},
+				"items_lb": {
+					"type": "listbox",
+					"top": 230,
+					"left": 0,
+					"width": 235,
+					"height": 470,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"hideSystemHighlight": true,
+					"showHeaders": false,
+					"dataSource": "Form:C1466.items",
+					"currentItemPositionSource": "Form:C1466.itemPosition",
+					"metaSource": "lb_meta ",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "automatic",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fontFamily": "Verdana",
+					"fontSize": 12,
+					"method": "ObjectMethods/items_lb.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": []
+				},
+				"details_sf": {
+					"type": "subform",
+					"top": 80,
+					"left": 236,
+					"width": 863,
+					"height": 580,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.details",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "system",
+					"method": "ObjectMethods/details_sf.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"AJUI_Tip_sf": {
+					"type": "subform",
+					"top": 720,
+					"left": 0,
+					"width": 118,
+					"height": 138,
+					"detailForm": "AJUI_Tip_container",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/AJUI_Tip_sf.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus"
+					]
+				},
+				"AJUI_Banner": {
+					"type": "input",
+					"top": 725,
+					"left": 254,
+					"width": 206,
+					"height": 129,
+					"visibility": "hidden",
+					"dataSourceTypeHint": "picture",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"method": "ObjectMethods/AJUI_Banner.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"save_btn": {
+					"type": "input",
+					"left": 964,
+					"top": 670,
+					"width": 110,
+					"height": 23,
+					"dataSourceTypeHint": "picture",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"method": "ObjectMethods/save_btn.4dm",
+					"events": [
+						"onLoad",
+						"onMouseUp",
+						"onClick",
+						"onMouseEnter",
+						"onMouseLeave"
+					],
+					"dropping": "none",
+					"dragging": "none"
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

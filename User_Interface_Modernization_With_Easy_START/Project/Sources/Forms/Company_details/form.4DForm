@@ -1,0 +1,301 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"company_name": {
+					"type": "input",
+					"top": 32,
+					"left": 22,
+					"width": 256,
+					"height": 30,
+					"dataSource": "Form:C1466.entity.name",
+					"fontFamily": "Verdana",
+					"fontSize": 24,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"placeholder": "Company Name",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/company_name.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onAfterEdit"
+					]
+				},
+				"FLabel_obj": {
+					"type": "input",
+					"top": 434,
+					"left": 0,
+					"width": 190,
+					"height": 21,
+					"visibility": "hidden",
+					"stroke": "#191970",
+					"fontFamily": "Verdana",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onAfterEdit"
+					]
+				},
+				"company_country": {
+					"type": "input",
+					"top": 32,
+					"left": 342,
+					"width": 256,
+					"height": 30,
+					"dataSource": "Form:C1466.entity.more_infos.country",
+					"fontFamily": "Verdana",
+					"fontSize": 24,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"placeholder": "Company Country",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/company_country.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterEdit"
+					]
+				},
+				"company_employeesLength": {
+					"type": "input",
+					"top": 154,
+					"left": 22,
+					"width": 256,
+					"height": 30,
+					"dataSource": "Form:C1466.entity.employees.length",
+					"textAlign": "left",
+					"fontFamily": "Verdana",
+					"fontSize": 24,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"placeholder": "Company Employees",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/company_employeesLength.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterEdit"
+					]
+				},
+				"lines_lb": {
+					"type": "listbox",
+					"top": 202,
+					"left": 0,
+					"width": 863,
+					"height": 379,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"listboxType": "collection",
+					"focusable": false,
+					"movableRows": false,
+					"dataSource": "Form:C1466.entity.employees",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "automatic",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"alternateFill": "#D2E3FF",
+					"textAlign": "left",
+					"fontFamily": "Verdana",
+					"fontSize": 18,
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470.firstName+\" \"+This:C1470.lastName",
+							"width": 250,
+							"minWidth": 150,
+							"maxWidth": 1000,
+							"enterable": false,
+							"alternateFill": "#D2E3FF",
+							"textAlign": "left",
+							"fontFamily": "Verdana",
+							"fontSize": 18,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Name",
+								"stroke": "#191970",
+								"textAlign": "left",
+								"fontFamily": "Verdana",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer1",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "left",
+								"fontFamily": "Verdana",
+								"fontSize": 18
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "This:C1470.birthDate",
+							"dataSourceTypeHint": "date",
+							"width": 150,
+							"minWidth": 40,
+							"maxWidth": 200,
+							"enterable": false,
+							"alternateFill": "#D2E3FF",
+							"textAlign": "left",
+							"fontFamily": "Verdana",
+							"fontSize": 18,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Birth Date",
+								"stroke": "#191970",
+								"textAlign": "left",
+								"fontFamily": "Verdana",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer2",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "left",
+								"fontFamily": "Verdana",
+								"fontSize": 18
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "This:C1470.manager.firstName+\" \"+This:C1470.manager.lastName",
+							"width": 200,
+							"minWidth": 50,
+							"maxWidth": 300,
+							"enterable": false,
+							"numberFormat": "###'###'###'##0.00 $",
+							"alternateFill": "#D2E3FF",
+							"textAlign": "left",
+							"fontFamily": "Verdana",
+							"fontSize": 18,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Manager",
+								"stroke": "#191970",
+								"textAlign": "left",
+								"fontFamily": "Verdana",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer3",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "left",
+								"fontFamily": "Verdana",
+								"fontSize": 18
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "This:C1470.invoices.length",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"alternateFill": "#D2E3FF",
+							"textAlign": "left",
+							"fontFamily": "Verdana",
+							"fontSize": 18,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Invoices",
+								"stroke": "#191970",
+								"textAlign": "left",
+								"fontFamily": "Verdana",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer4",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "left",
+								"fontFamily": "Verdana",
+								"fontSize": 18
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

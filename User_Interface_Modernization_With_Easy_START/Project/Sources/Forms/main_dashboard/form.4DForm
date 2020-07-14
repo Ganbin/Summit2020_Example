@@ -1,0 +1,244 @@
+﻿{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Rectangle",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 960,
+					"height": 420,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"stroke": "transparent"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"top": 3,
+					"left": 10,
+					"width": 718,
+					"height": 57,
+					"stroke": "#191970",
+					"fontFamily": "Verdana",
+					"fontSize": 56,
+					"fontWeight": "bold",
+					"text": ":xliff:global.label.dashboard"
+				},
+				"pic1": {
+					"type": "input",
+					"top": 142,
+					"left": 20,
+					"width": 200,
+					"height": 200,
+					"dataSourceTypeHint": "picture",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 24,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"method": "ObjectMethods/pic1.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onMouseEnter",
+						"onMouseLeave",
+						"onMouseMove",
+						"onAfterEdit"
+					]
+				},
+				"pic2": {
+					"type": "input",
+					"top": 142,
+					"left": 350,
+					"width": 200,
+					"height": 200,
+					"dataSourceTypeHint": "picture",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 24,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"method": "ObjectMethods/pic2.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onMouseEnter",
+						"onMouseLeave",
+						"onAfterEdit"
+					]
+				},
+				"pic3": {
+					"type": "input",
+					"top": 142,
+					"left": 680,
+					"width": 200,
+					"height": 200,
+					"dataSourceTypeHint": "picture",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 24,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"method": "ObjectMethods/pic3.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onMouseEnter",
+						"onMouseLeave",
+						"onAfterEdit"
+					]
+				},
+				"month_txt": {
+					"type": "text",
+					"top": 73,
+					"left": 370,
+					"width": 220,
+					"height": 36,
+					"stroke": "#191970",
+					"textAlign": "center",
+					"fontFamily": "Verdana",
+					"fontSize": 28,
+					"fontWeight": "bold",
+					"text": "DASHBOARD"
+				},
+				"previous_btn": {
+					"type": "button",
+					"top": 84,
+					"left": 297,
+					"width": 68,
+					"height": 15,
+					"text": "Previous",
+					"focusable": false,
+					"method": "ObjectMethods/previous_btn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"next_btn": {
+					"type": "button",
+					"top": 84,
+					"left": 595,
+					"width": 68,
+					"height": 15,
+					"text": "Next",
+					"focusable": false,
+					"method": "ObjectMethods/next_btn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"month_txt1": {
+					"type": "text",
+					"top": 133,
+					"left": 41,
+					"width": 240,
+					"height": 23,
+					"stroke": "#191970",
+					"textAlign": "center",
+					"fontFamily": "Verdana",
+					"fontSize": 17,
+					"fontWeight": "bold",
+					"text": "BEST SELLER"
+				},
+				"month_txt2": {
+					"type": "text",
+					"top": 133,
+					"left": 363,
+					"width": 240,
+					"height": 23,
+					"stroke": "#191970",
+					"textAlign": "center",
+					"fontFamily": "Verdana",
+					"fontSize": 17,
+					"fontWeight": "bold",
+					"text": "BEST EMPLOYEE"
+				},
+				"month_txt3": {
+					"type": "text",
+					"top": 133,
+					"left": 700,
+					"width": 240,
+					"height": 23,
+					"stroke": "#191970",
+					"textAlign": "center",
+					"fontFamily": "Verdana",
+					"fontSize": 17,
+					"fontWeight": "bold",
+					"text": "MONTH PERCENT"
+				},
+				"AJUI_Tip_sf": {
+					"type": "subform",
+					"top": 480,
+					"left": 20,
+					"width": 118,
+					"height": 138,
+					"detailForm": "AJUI_Tip_container",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"events": [
+						"onLoad",
+						"onLosingFocus"
+					]
+				}
+			}
+		}
+	]
+}

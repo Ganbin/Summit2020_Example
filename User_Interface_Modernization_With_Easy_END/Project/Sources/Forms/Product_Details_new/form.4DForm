@@ -1,0 +1,125 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"ID": {
+					"type": "input",
+					"top": 10,
+					"left": 140,
+					"width": 200,
+					"height": 17,
+					"dataSource": "Form:C1466.entity.name",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterEdit"
+					],
+					"placeholder": "Product Name",
+					"method": "ObjectMethods/ID.4dm"
+				},
+				"ID1": {
+					"type": "input",
+					"top": 40,
+					"left": 140,
+					"width": 200,
+					"height": 17,
+					"dataSource": "Form:C1466.entity.price",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterEdit"
+					],
+					"placeholder": "Price",
+					"method": "ObjectMethods/ID1.4dm"
+				},
+				"ID2": {
+					"type": "input",
+					"top": 70,
+					"left": 140,
+					"width": 200,
+					"height": 17,
+					"dataSource": "Form:C1466.entity.stock",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterEdit"
+					],
+					"placeholder": "Stock",
+					"method": "ObjectMethods/ID2.4dm"
+				},
+				"FLabel_obj": {
+					"type": "input",
+					"left": 37,
+					"top": 148,
+					"width": 113,
+					"height": 17,
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"fontWeight": "bold",
+					"stroke": "#537EC5"
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

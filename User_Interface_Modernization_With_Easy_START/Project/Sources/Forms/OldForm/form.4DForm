@@ -1,0 +1,224 @@
+﻿{
+	"destination": "detailScreen",
+	"windowMinWidth": 600,
+	"windowMinHeight": 300,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"company_btn": {
+					"type": "button",
+					"top": 10,
+					"left": 10,
+					"width": 113,
+					"height": 20,
+					"text": "Companies",
+					"focusable": false,
+					"method": "ObjectMethods/company_btn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"employee_btn": {
+					"type": "button",
+					"top": 10,
+					"left": 143,
+					"width": 113,
+					"height": 20,
+					"text": "Employees",
+					"focusable": false,
+					"method": "ObjectMethods/employee_btn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"product_btn": {
+					"type": "button",
+					"top": 10,
+					"left": 276,
+					"width": 113,
+					"height": 20,
+					"text": "Products",
+					"focusable": false,
+					"method": "ObjectMethods/product_btn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"invoice_btn": {
+					"type": "button",
+					"top": 10,
+					"left": 409,
+					"width": 113,
+					"height": 20,
+					"text": "Invoices",
+					"focusable": false,
+					"method": "ObjectMethods/invoice_btn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"items_lb": {
+					"type": "listbox",
+					"top": 40,
+					"left": 10,
+					"width": 240,
+					"height": 570,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"showHeaders": false,
+					"dataSource": "Form:C1466.items",
+					"currentItemSource": "Form:C1466.details.entity",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"alternateFill": "#EFEFEF",
+					"method": "ObjectMethods/items_lb.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"width": 225,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Header1"
+							},
+							"footer": {
+								"name": "Footer1",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"details_sf": {
+					"type": "subform",
+					"top": 40,
+					"left": 260,
+					"width": 700,
+					"height": 570,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.details",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
+				},
+				"add_btn": {
+					"type": "button",
+					"top": 620,
+					"left": 10,
+					"width": 113,
+					"height": 20,
+					"sizingY": "move",
+					"text": "Add",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"del_btn": {
+					"type": "button",
+					"top": 620,
+					"left": 138,
+					"width": 113,
+					"height": 20,
+					"sizingY": "move",
+					"text": "Delete",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"save_btn": {
+					"type": "button",
+					"top": 620,
+					"left": 837,
+					"width": 113,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"text": "Save",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"edit_btn": {
+					"type": "button",
+					"top": 620,
+					"left": 267,
+					"width": 113,
+					"height": 20,
+					"sizingY": "move",
+					"text": "Edit",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"_setSize": {
+					"type": "rectangle",
+					"top": 630,
+					"left": 940,
+					"width": 20,
+					"height": 20,
+					"strokeWidth": 0,
+					"fill": "#ff0000",
+					"stroke": "transparent",
+					"visibility": "hidden",
+					"sizingY": "move",
+					"sizingX": "move"
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

@@ -1,0 +1,1 @@
+AJ_Tools_xliff_setTables (ds:C1482.XLIFF_Language;ds:C1482.XLIFF_File;ds:C1482.XLIFF_Group;ds:C1482.XLIFF_String)

@@ -1,0 +1,126 @@
+﻿{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "_setSize",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onUnload"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 80,
+					"left": 0,
+					"width": 1200,
+					"height": 720,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#F1FAF9",
+					"stroke": "transparent"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1204,
+					"height": 80,
+					"sizingX": "grow",
+					"fill": "#21897E",
+					"stroke": "transparent"
+				},
+				"Title": {
+					"type": "input",
+					"top": 29,
+					"left": 15,
+					"width": 1163,
+					"height": 51,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.title",
+					"stroke": "#FFFFFF",
+					"fontFamily": "Gill Sans",
+					"fontSize": 48,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onAfterEdit"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": -4,
+					"left": 923,
+					"width": 262,
+					"height": 30,
+					"sizingX": "move",
+					"stroke": "#FFFFFF",
+					"textAlign": "right",
+					"fontFamily": "Gill Sans",
+					"fontSize": 24,
+					"text": "World Best Grocery Shop"
+				},
+				"_setSize": {
+					"type": "rectangle",
+					"top": 195,
+					"left": 555,
+					"width": 25,
+					"height": 25,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"sizingY": "move",
+					"fill": "#FF0000",
+					"stroke": "transparent"
+				},
+				"randomScan_btn": {
+					"type": "input",
+					"top": 110,
+					"left": 40,
+					"width": 500,
+					"height": 80,
+					"dataSourceTypeHint": "picture",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 24,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"method": "ObjectMethods/randomScan_btn.4dm",
+					"events": [
+						"onLoad",
+						"onMouseUp",
+						"onClick",
+						"onMouseEnter",
+						"onMouseLeave"
+					]
+				}
+			}
+		}
+	]
+}

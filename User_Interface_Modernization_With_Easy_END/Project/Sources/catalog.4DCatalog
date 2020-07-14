@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="" uuid="B046F5A6BDC246E3AD57EBAC11AFC791" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Company" uuid="DA2346E3D3614F5782930F0B323FAE65" id="1" prevent_journaling="true">
+		<field name="ID" uuid="760EBB86033C40118AD4B9C77D6E2E52" type="4" unique="true" autosequence="true" id="1"/>
+		<field name="name" uuid="FACCEBCBC49146458041BF71BAF39C20" type="10" id="2"/>
+		<field name="more_infos" uuid="E7F19DCD3D52422189BC385283158584" type="21" blob_switch_size="2147483647" never_null="true" id="3"/>
+		<primary_key field_name="ID" field_uuid="760EBB86033C40118AD4B9C77D6E2E52"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="6">
+				<color red="150" green="216" blue="175" alpha="255"/>
+				<coordinates left="0" top="0" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Employee" uuid="BF76BE8E7AF843AE85C3D703E6D2CA9B" id="2" prevent_journaling="true">
+		<field name="ID" uuid="5D21F6DE9BD94BF89F211CD8996390FE" type="4" unique="true" autosequence="true" id="1"/>
+		<field name="firstName" uuid="D796EE7045A74AD5BDCC15FA44662463" type="10" id="2"/>
+		<field name="lastName" uuid="A585C0178AAD4308A6D1F8EBA50506BB" type="10" id="3"/>
+		<field name="birthDate" uuid="1144259F1D804CFFBD2A7CE2300A2C5C" type="8" id="4"/>
+		<field name="ID_Company" uuid="9A857A3984D1404F9ABA10A4EC52C6BC" type="4" id="5"/>
+		<field name="title" uuid="17FA7DD06711446C8248F3F656C14EB5" type="10" id="6"/>
+		<field name="ID_Manager" uuid="D4A258ED6302452096DACDF3CC8B09CA" type="4" id="7"/>
+		<field name="more_infos" uuid="1DCB185D488C4BE99DBA390A8ACA9EA8" type="21" blob_switch_size="2147483647" never_null="true" id="8"/>
+		<primary_key field_name="ID" field_uuid="5D21F6DE9BD94BF89F211CD8996390FE"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="8">
+				<color red="150" green="216" blue="175" alpha="255"/>
+				<coordinates left="186.61458333333" top="0" width="120" height="224.27473958333"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Product" uuid="D5F56F92AC2D4194BD6C0C8F7315284A" id="3" prevent_journaling="true">
+		<field name="ID" uuid="FE2CA31E9F8147C783A421B96DB0150F" type="4" unique="true" autosequence="true" id="1"/>
+		<field name="name" uuid="3CFA89223EB4415C904F50ABAA8F8718" type="10" id="2"/>
+		<field name="price" uuid="A8F12E48386C4B87B0E4FCE2CA64AA8C" type="6" id="3"/>
+		<field name="stock" uuid="1B974C3807504650843312B19EBD4345" type="4" id="4"/>
+		<primary_key field_name="ID" field_uuid="FE2CA31E9F8147C783A421B96DB0150F"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="224" green="234" blue="104" alpha="255"/>
+				<coordinates left="728.82552083333" top="3.02734375" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Invoice" uuid="A5CF6E07363A428B953A63F18B3CBB24" id="4" prevent_journaling="true">
+		<field name="ID" uuid="81772D6DB03F4F1EA6871BEE2D8C31D5" type="4" unique="true" autosequence="true" id="1"/>
+		<field name="ID_Employee" uuid="9387804CCB434979B59FC9D1E0DA9988" type="4" id="2"/>
+		<field name="HRID" uuid="9CD0B8B9CFF04E22A089A68FAB13063D" type="10" id="3"/>
+		<field name="creationDate" uuid="0A85B03CD94449699BFEC87424C7039E" type="8" id="4"/>
+		<field name="creationTime" uuid="9838361767B84D359ABA4A96DED41612" type="9" id="5"/>
+		<field name="priceTotal" uuid="16345410E31F45CDAA1256E6E18C7BF8" type="6" id="6"/>
+		<field name="more_infos" uuid="E593B41787E442C599BEC8C20DB65B10" type="21" blob_switch_size="2147483647" never_null="true" id="7"/>
+		<field name="state" uuid="52B3BB51BDE34EBDBFA68AE96B19C002" type="3" never_null="true" id="8"/>
+		<primary_key field_name="ID" field_uuid="81772D6DB03F4F1EA6871BEE2D8C31D5"/>
+		<table_extra input_form="details" output_form="List">
+			<editor_table_info displayable_fields_count="9">
+				<color red="224" green="234" blue="104" alpha="255"/>
+				<coordinates left="378.36848958333" top="9.7994791666667" width="124.390625" height="241.7890625"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Invoice_Line" uuid="86A3A1C2152A4F98BCB144BA0B9D5CF1" id="5" prevent_journaling="true">
+		<field name="ID" uuid="A036649F8AF24924997B39356BAC0573" type="4" unique="true" autosequence="true" id="1"/>
+		<field name="ID_Invoice" uuid="F1536D03DB1A42F9B0D89E42CE5F338F" type="4" id="2"/>
+		<field name="ID_Product" uuid="85C218B2DD174A8A84231D1CD2193801" type="4" id="3"/>
+		<field name="quantity" uuid="600ACE81698147F9881B4DFBBB9A0D7A" type="4" id="4"/>
+		<field name="price" uuid="0C67F931090A4ADE8FA77B8C8EA092FE" type="6" id="5"/>
+		<primary_key field_name="ID" field_uuid="A036649F8AF24924997B39356BAC0573"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="224" green="234" blue="104" alpha="255"/>
+				<coordinates left="556.36067708333" top="3.0755208333334" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="XLIFF_Language" uuid="91FE0640C9F8468EB42DD20FC5FBCF03" id="6">
+		<field name="UUID" uuid="D487FCC8BB334D9995ACE1A099BA06BC" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="name" uuid="772A2317CA1C4A08BE36432E84543FE5" type="10" limiting_length="255" unique="true" never_null="true" id="2"/>
+		<field name="infos" uuid="4215F0820C824CB4935A8F3BC317C221" type="21" blob_switch_size="2147483647" never_null="true" id="3"/>
+		<primary_key field_name="UUID" field_uuid="D487FCC8BB334D9995ACE1A099BA06BC"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="6">
+				<color red="252" green="191" blue="73" alpha="255"/>
+				<coordinates left="0" top="275.20833333333" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="XLIFF_File" uuid="A3D7FD2FEAD44D5ABFDA1D2ED10A6834" id="7">
+		<field name="UUID" uuid="7F5AA8639FF042ED82053D8A247E619F" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="name" uuid="F3914B70969A4CED870E2947622E6D34" type="10" limiting_length="255" unique="true" never_null="true" id="2"/>
+		<primary_key field_name="UUID" field_uuid="7F5AA8639FF042ED82053D8A247E619F"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="6">
+				<color red="252" green="191" blue="73" alpha="255"/>
+				<coordinates left="172.42578125" top="278.90364583333" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="XLIFF_Group" uuid="F2AEF7726D1A48A5889C33A2A9750BE0" id="8">
+		<field name="UUID" uuid="4583AEE609BC44AC9A80413BA83AC8C7" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="UUID_File" uuid="380495FDD6AE4765910F65E3076B114E" type="10" store_as_UUID="true" never_null="true" id="2"/>
+		<field name="resname" uuid="C0A557B30837468FBD75F71D4F10F77B" type="10" limiting_length="255" unique="true" never_null="true" id="3"/>
+		<field name="id" uuid="24F6E841F6FF4493B3D0AF83864EFDE5" type="10" limiting_length="255" unique="true" never_null="true" id="4"/>
+		<primary_key field_name="UUID" field_uuid="4583AEE609BC44AC9A80413BA83AC8C7"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="6">
+				<color red="252" green="191" blue="73" alpha="255"/>
+				<coordinates left="342.59375" top="280.98567708333" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="XLIFF_String" uuid="DA1F206ED34D4A5E954C5C48CEB17019" id="9">
+		<field name="UUID" uuid="B936EBB0289C4ECFBAA719AA5D8B6649" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="UUID_Group" uuid="2F0B4E56D14F4E2E8DDAD61BA35F4DDD" type="10" store_as_UUID="true" never_null="true" id="2"/>
+		<field name="resname" uuid="C984D8609E17475FBBA7021D148362E6" type="10" limiting_length="255" unique="true" never_null="true" id="3"/>
+		<field name="id" uuid="FC59470CDD1C460CA236A9CC77787933" type="10" limiting_length="255" unique="true" never_null="true" id="4"/>
+		<field name="infos" uuid="7D65E3686CC54B8492550DDF47380F80" type="21" blob_switch_size="2147483647" never_null="true" id="5"/>
+		<primary_key field_name="UUID" field_uuid="B936EBB0289C4ECFBAA719AA5D8B6649"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="6">
+				<color red="252" green="191" blue="73" alpha="255"/>
+				<coordinates left="534.49609375" top="282.49739583333" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<relation uuid="28C955CF44B94A6DB0A94B05917BB879" name_Nto1="invoice" name_1toN="lines" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="F1536D03DB1A42F9B0D89E42CE5F338F" name="ID_Invoice">
+				<table_ref uuid="86A3A1C2152A4F98BCB144BA0B9D5CF1" name="Invoice_Line"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="81772D6DB03F4F1EA6871BEE2D8C31D5" name="ID">
+				<table_ref uuid="A5CF6E07363A428B953A63F18B3CBB24" name="Invoice"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="224" green="234" blue="104" alpha="255"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="DCE1DB0AFA6A471590CB333B9786C6FB" name_Nto1="product" name_1toN="lines" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="85C218B2DD174A8A84231D1CD2193801" name="ID_Product">
+				<table_ref uuid="86A3A1C2152A4F98BCB144BA0B9D5CF1" name="Invoice_Line"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="FE2CA31E9F8147C783A421B96DB0150F" name="ID">
+				<table_ref uuid="D5F56F92AC2D4194BD6C0C8F7315284A" name="Product"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="224" green="234" blue="104" alpha="255"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="F5A30AC885F64B1EA378859AA3B7F801" name_Nto1="company" name_1toN="employees" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="9A857A3984D1404F9ABA10A4EC52C6BC" name="ID_Company">
+				<table_ref uuid="BF76BE8E7AF843AE85C3D703E6D2CA9B" name="Employee"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="760EBB86033C40118AD4B9C77D6E2E52" name="ID">
+				<table_ref uuid="DA2346E3D3614F5782930F0B323FAE65" name="Company"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="150" green="216" blue="175" alpha="255"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="4E09A042D93B4953BAE6CE02C539720A" name_Nto1="employee" name_1toN="invoices" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="9387804CCB434979B59FC9D1E0DA9988" name="ID_Employee">
+				<table_ref uuid="A5CF6E07363A428B953A63F18B3CBB24" name="Invoice"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="5D21F6DE9BD94BF89F211CD8996390FE" name="ID">
+				<table_ref uuid="BF76BE8E7AF843AE85C3D703E6D2CA9B" name="Employee"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="150" green="216" blue="175" alpha="255"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="34058ED715484FE19DB77707FECFC028" name_Nto1="file" name_1toN="groups" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="380495FDD6AE4765910F65E3076B114E" name="UUID_File">
+				<table_ref uuid="F2AEF7726D1A48A5889C33A2A9750BE0" name="XLIFF_Group"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="7F5AA8639FF042ED82053D8A247E619F" name="UUID">
+				<table_ref uuid="A3D7FD2FEAD44D5ABFDA1D2ED10A6834" name="XLIFF_File"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="252" green="191" blue="73" alpha="255"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="32212A249AA941D8BD60B28D87D41FFF" name_Nto1="group" name_1toN="strings" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="2F0B4E56D14F4E2E8DDAD61BA35F4DDD" name="UUID_Group">
+				<table_ref uuid="DA1F206ED34D4A5E954C5C48CEB17019" name="XLIFF_String"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="4583AEE609BC44AC9A80413BA83AC8C7" name="UUID">
+				<table_ref uuid="F2AEF7726D1A48A5889C33A2A9750BE0" name="XLIFF_Group"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="252" green="191" blue="73" alpha="255"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="B8CA8CFA70484329B243CBB042FF319A" name_Nto1="manager" name_1toN="staff" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="D4A258ED6302452096DACDF3CC8B09CA" name="ID_Manager">
+				<table_ref uuid="BF76BE8E7AF843AE85C3D703E6D2CA9B" name="Employee"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="5D21F6DE9BD94BF89F211CD8996390FE" name="ID">
+				<table_ref uuid="BF76BE8E7AF843AE85C3D703E6D2CA9B" name="Employee"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="150" green="216" blue="175" alpha="255"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<index kind="regular" unique_keys="true" uuid="0297AC6AD4C4433FAD82891FB3DCF391" type="1">
+		<field_ref uuid="A036649F8AF24924997B39356BAC0573" name="ID">
+			<table_ref uuid="86A3A1C2152A4F98BCB144BA0B9D5CF1" name="Invoice_Line"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="09B49ABE2E13454BA2E2AEDFA1F28E17" type="3">
+		<field_ref uuid="F1536D03DB1A42F9B0D89E42CE5F338F" name="ID_Invoice">
+			<table_ref uuid="86A3A1C2152A4F98BCB144BA0B9D5CF1" name="Invoice_Line"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="151C5899C89E44EFA1089443282F4169" type="7">
+		<field_ref uuid="7F5AA8639FF042ED82053D8A247E619F" name="UUID">
+			<table_ref uuid="A3D7FD2FEAD44D5ABFDA1D2ED10A6834" name="XLIFF_File"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="170BF52A1749408791A19A92D947F8A5" type="3">
+		<field_ref uuid="D4A258ED6302452096DACDF3CC8B09CA" name="ID_Manager">
+			<table_ref uuid="BF76BE8E7AF843AE85C3D703E6D2CA9B" name="Employee"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="1C8FCE26CD704BF98B39AC03188929EA" type="1">
+		<field_ref uuid="760EBB86033C40118AD4B9C77D6E2E52" name="ID">
+			<table_ref uuid="DA2346E3D3614F5782930F0B323FAE65" name="Company"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="2EFCF8A7DB424CB0B1AAC3EBA907B92F" type="3">
+		<field_ref uuid="380495FDD6AE4765910F65E3076B114E" name="UUID_File">
+			<table_ref uuid="F2AEF7726D1A48A5889C33A2A9750BE0" name="XLIFF_Group"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="47B2A9164B824A749358A8CDB2C5B076" type="1">
+		<field_ref uuid="F3914B70969A4CED870E2947622E6D34" name="name">
+			<table_ref uuid="A3D7FD2FEAD44D5ABFDA1D2ED10A6834" name="XLIFF_File"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="55ADF697177D497EA349F9B86CC3A2D6" type="7">
+		<field_ref uuid="4583AEE609BC44AC9A80413BA83AC8C7" name="UUID">
+			<table_ref uuid="F2AEF7726D1A48A5889C33A2A9750BE0" name="XLIFF_Group"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="614E2C32F7C6484EAD227535C3C18D64" type="1">
+		<field_ref uuid="24F6E841F6FF4493B3D0AF83864EFDE5" name="id">
+			<table_ref uuid="F2AEF7726D1A48A5889C33A2A9750BE0" name="XLIFF_Group"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="6DCB13254F95457ABC3A0E9A38B4B47F" type="7">
+		<field_ref uuid="D487FCC8BB334D9995ACE1A099BA06BC" name="UUID">
+			<table_ref uuid="91FE0640C9F8468EB42DD20FC5FBCF03" name="XLIFF_Language"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="701998BD8C6C419AB0A854A94D8BA00B" type="1">
+		<field_ref uuid="81772D6DB03F4F1EA6871BEE2D8C31D5" name="ID">
+			<table_ref uuid="A5CF6E07363A428B953A63F18B3CBB24" name="Invoice"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="787E854A5A764605901B6751A4FBFC71" type="1">
+		<field_ref uuid="5D21F6DE9BD94BF89F211CD8996390FE" name="ID">
+			<table_ref uuid="BF76BE8E7AF843AE85C3D703E6D2CA9B" name="Employee"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="7E58DBF90E404309BF46FE2033F4FE75" type="1">
+		<field_ref uuid="FE2CA31E9F8147C783A421B96DB0150F" name="ID">
+			<table_ref uuid="D5F56F92AC2D4194BD6C0C8F7315284A" name="Product"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="A0374B3112C04093819C139CEDC8B5E8" type="3">
+		<field_ref uuid="9A857A3984D1404F9ABA10A4EC52C6BC" name="ID_Company">
+			<table_ref uuid="BF76BE8E7AF843AE85C3D703E6D2CA9B" name="Employee"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="A5C29A8F50D24BB59B63D6A3F6061390" type="7">
+		<field_ref uuid="B936EBB0289C4ECFBAA719AA5D8B6649" name="UUID">
+			<table_ref uuid="DA1F206ED34D4A5E954C5C48CEB17019" name="XLIFF_String"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="A634D634221B4586B4A78AAF6D80663E" type="1">
+		<field_ref uuid="FC59470CDD1C460CA236A9CC77787933" name="id">
+			<table_ref uuid="DA1F206ED34D4A5E954C5C48CEB17019" name="XLIFF_String"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="A8292A4594204F36800EF3ED5EB5B4A6" type="3">
+		<field_ref uuid="85C218B2DD174A8A84231D1CD2193801" name="ID_Product">
+			<table_ref uuid="86A3A1C2152A4F98BCB144BA0B9D5CF1" name="Invoice_Line"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="B04C0DC067A247F0AF4CC062A1330785" type="3">
+		<field_ref uuid="2F0B4E56D14F4E2E8DDAD61BA35F4DDD" name="UUID_Group">
+			<table_ref uuid="DA1F206ED34D4A5E954C5C48CEB17019" name="XLIFF_String"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="B27DDAF5EF38409E9118C2B5B33EE4B1" type="3">
+		<field_ref uuid="9387804CCB434979B59FC9D1E0DA9988" name="ID_Employee">
+			<table_ref uuid="A5CF6E07363A428B953A63F18B3CBB24" name="Invoice"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="C7BBE0A3D3C54AB6B1A7501AEFDE01CD" type="1">
+		<field_ref uuid="C0A557B30837468FBD75F71D4F10F77B" name="resname">
+			<table_ref uuid="F2AEF7726D1A48A5889C33A2A9750BE0" name="XLIFF_Group"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="EB65A8087A484D269E40D6E46F903243" type="1">
+		<field_ref uuid="772A2317CA1C4A08BE36432E84543FE5" name="name">
+			<table_ref uuid="91FE0640C9F8468EB42DD20FC5FBCF03" name="XLIFF_Language"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="F75E5FF2B1FF45DB976B802BC5CA9D07" type="1">
+		<field_ref uuid="C984D8609E17475FBBA7021D148362E6" name="resname">
+			<table_ref uuid="DA1F206ED34D4A5E954C5C48CEB17019" name="XLIFF_String"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:63.1.0" __keywordBuildingHash="icu:63.1.0" package_name="Demo_WT_19_v18" structure_file_name="Demo_WT_19" data_file_path=":Demo_WT_19.4DD">
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>

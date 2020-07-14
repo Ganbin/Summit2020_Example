@@ -1,0 +1,1763 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text41": {
+					"type": "text",
+					"top": 46,
+					"left": 34,
+					"width": 99,
+					"height": 17,
+					"text": "First Name"
+				},
+				"Text42": {
+					"type": "text",
+					"top": 149,
+					"left": 34,
+					"width": 99,
+					"height": 17,
+					"text": "Occupation"
+				},
+				"Text43": {
+					"type": "text",
+					"top": 19,
+					"left": 311,
+					"width": 99,
+					"height": 17,
+					"text": "Addess"
+				},
+				"Text44": {
+					"type": "text",
+					"top": 73,
+					"left": 311,
+					"width": 99,
+					"height": 17,
+					"text": "ZIP Code"
+				},
+				"Text45": {
+					"type": "text",
+					"top": 149,
+					"left": 311,
+					"width": 99,
+					"height": 17,
+					"text": "Phone"
+				},
+				"Text46": {
+					"type": "text",
+					"top": 199,
+					"left": 311,
+					"width": 99,
+					"height": 17,
+					"text": "Email"
+				},
+				"Field42": {
+					"type": "input",
+					"top": 149,
+					"left": 142,
+					"width": 149,
+					"height": 17,
+					"dataSource": "occupation",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field58": {
+					"type": "input",
+					"top": 175,
+					"left": 142,
+					"width": 149,
+					"height": 17,
+					"dataSource": "creation_date",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field59": {
+					"type": "input",
+					"top": 201,
+					"left": 142,
+					"width": 149,
+					"height": 17,
+					"dataSource": "modification_date",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field50": {
+					"type": "input",
+					"top": 228,
+					"left": 142,
+					"width": 149,
+					"height": 17,
+					"dataSource": "eyes_color",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field60": {
+					"type": "input",
+					"top": 254,
+					"left": 142,
+					"width": 149,
+					"height": 17,
+					"dataSource": "height",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field61": {
+					"type": "input",
+					"top": 281,
+					"left": 142,
+					"width": 149,
+					"height": 17,
+					"dataSource": "weight",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field43": {
+					"type": "input",
+					"top": 19,
+					"left": 419,
+					"width": 149,
+					"height": 17,
+					"dataSource": "address",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field53": {
+					"type": "input",
+					"top": 46,
+					"left": 419,
+					"width": 149,
+					"height": 17,
+					"dataSource": "address2",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field44": {
+					"type": "input",
+					"top": 73,
+					"left": 419,
+					"width": 149,
+					"height": 17,
+					"dataSource": "zip_code",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field54": {
+					"type": "input",
+					"top": 97,
+					"left": 419,
+					"width": 149,
+					"height": 17,
+					"dataSource": "city",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field52": {
+					"type": "input",
+					"top": 123,
+					"left": 419,
+					"width": 149,
+					"height": 17,
+					"dataSource": "country",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field45": {
+					"type": "input",
+					"top": 149,
+					"left": 419,
+					"width": 149,
+					"height": 17,
+					"dataSource": "phone",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field55": {
+					"type": "input",
+					"top": 174,
+					"left": 419,
+					"width": 149,
+					"height": 17,
+					"dataSource": "fax",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field46": {
+					"type": "input",
+					"top": 199,
+					"left": 419,
+					"width": 149,
+					"height": 17,
+					"dataSource": "email",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field56": {
+					"type": "input",
+					"top": 225,
+					"left": 419,
+					"width": 149,
+					"height": 17,
+					"dataSource": "phone2",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field48": {
+					"type": "input",
+					"top": 251,
+					"left": 419,
+					"width": 149,
+					"height": 17,
+					"dataSource": "private_phone",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field62": {
+					"type": "input",
+					"top": 278,
+					"left": 419,
+					"width": 149,
+					"height": 17,
+					"dataSource": "mobile_phone",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button4": {
+					"type": "button",
+					"top": 333,
+					"left": 23,
+					"width": 93,
+					"height": 21,
+					"text": "Previous",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Button5": {
+					"type": "button",
+					"top": 333,
+					"left": 128,
+					"width": 93,
+					"height": 21,
+					"text": "Next",
+					"focusable": false,
+					"method": "ObjectMethods/Button5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button7": {
+					"type": "button",
+					"top": 333,
+					"left": 404,
+					"width": 93,
+					"height": 21,
+					"text": "Cancel",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Button6": {
+					"type": "button",
+					"top": 333,
+					"left": 506,
+					"width": 93,
+					"height": 21,
+					"text": "Save",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Field47": {
+					"type": "input",
+					"top": 19,
+					"left": 142,
+					"width": 149,
+					"height": 17,
+					"dataSource": "ID",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field41": {
+					"type": "input",
+					"top": 46,
+					"left": 142,
+					"width": 149,
+					"height": 17,
+					"dataSource": "first_name",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field51": {
+					"type": "input",
+					"top": 73,
+					"left": 142,
+					"width": 149,
+					"height": 17,
+					"dataSource": "last_name",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field49": {
+					"type": "input",
+					"top": 97,
+					"left": 142,
+					"width": 149,
+					"height": 17,
+					"dataSource": "title",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field57": {
+					"type": "input",
+					"top": 123,
+					"left": 142,
+					"width": 149,
+					"height": 17,
+					"dataSource": "birth_date",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text47": {
+					"type": "text",
+					"top": 19,
+					"left": 34,
+					"width": 99,
+					"height": 17,
+					"text": "ID"
+				},
+				"Text48": {
+					"type": "text",
+					"top": 251,
+					"left": 311,
+					"width": 99,
+					"height": 17,
+					"text": "Private Phone"
+				},
+				"Text49": {
+					"type": "text",
+					"top": 97,
+					"left": 34,
+					"width": 99,
+					"height": 17,
+					"text": "Title"
+				},
+				"Text50": {
+					"type": "text",
+					"top": 228,
+					"left": 34,
+					"width": 99,
+					"height": 17,
+					"text": "Eyes"
+				},
+				"Text51": {
+					"type": "text",
+					"top": 73,
+					"left": 34,
+					"width": 99,
+					"height": 17,
+					"text": "Last Name"
+				},
+				"Text52": {
+					"type": "text",
+					"top": 123,
+					"left": 311,
+					"width": 99,
+					"height": 17,
+					"text": "Country"
+				},
+				"Text53": {
+					"type": "text",
+					"top": 46,
+					"left": 311,
+					"width": 99,
+					"height": 17,
+					"text": "Address 2"
+				},
+				"Text54": {
+					"type": "text",
+					"top": 97,
+					"left": 311,
+					"width": 99,
+					"height": 17,
+					"text": "City"
+				},
+				"Text55": {
+					"type": "text",
+					"top": 174,
+					"left": 311,
+					"width": 99,
+					"height": 17,
+					"text": "Fax"
+				},
+				"Text56": {
+					"type": "text",
+					"top": 225,
+					"left": 311,
+					"width": 99,
+					"height": 17,
+					"text": "Phone 2"
+				},
+				"Text57": {
+					"type": "text",
+					"top": 123,
+					"left": 34,
+					"width": 99,
+					"height": 17,
+					"text": "Birth Date"
+				},
+				"Text58": {
+					"type": "text",
+					"top": 175,
+					"left": 34,
+					"width": 99,
+					"height": 17,
+					"text": "Creation Date"
+				},
+				"Text59": {
+					"type": "text",
+					"top": 201,
+					"left": 34,
+					"width": 99,
+					"height": 17,
+					"text": "Modification Date"
+				},
+				"Text60": {
+					"type": "text",
+					"top": 254,
+					"left": 34,
+					"width": 99,
+					"height": 17,
+					"text": "Height"
+				},
+				"Text61": {
+					"type": "text",
+					"top": 281,
+					"left": 34,
+					"width": 99,
+					"height": 17,
+					"text": "Weight"
+				},
+				"Text62": {
+					"type": "text",
+					"top": 278,
+					"left": 311,
+					"width": 99,
+					"height": 17,
+					"text": "Mobile"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Group Box3": {
+					"type": "groupBox",
+					"top": 307,
+					"left": 29,
+					"width": 284,
+					"height": 113,
+					"text": "Personal"
+				},
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 13,
+					"left": 333,
+					"width": 284,
+					"height": 315,
+					"text": "Address"
+				},
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 185,
+					"left": 29,
+					"width": 284,
+					"height": 113,
+					"text": "Divers"
+				},
+				"Group Box": {
+					"type": "groupBox",
+					"top": 13,
+					"left": 29,
+					"width": 284,
+					"height": 163,
+					"text": "Client"
+				},
+				"Field": {
+					"type": "input",
+					"top": 63,
+					"left": 152,
+					"width": 149,
+					"height": 17,
+					"dataSource": "first_name",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 63,
+					"left": 44,
+					"width": 99,
+					"height": 17,
+					"text": "First Name"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 216,
+					"left": 152,
+					"width": 149,
+					"height": 17,
+					"dataSource": "occupation",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 216,
+					"left": 44,
+					"width": 99,
+					"height": 17,
+					"text": "Occupation"
+				},
+				"Field2": {
+					"type": "input",
+					"top": 36,
+					"left": 456,
+					"width": 149,
+					"height": 17,
+					"dataSource": "address",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 36,
+					"left": 348,
+					"width": 99,
+					"height": 17,
+					"text": "Addess"
+				},
+				"Field3": {
+					"type": "input",
+					"top": 90,
+					"left": 456,
+					"width": 149,
+					"height": 17,
+					"dataSource": "zip_code",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 90,
+					"left": 348,
+					"width": 99,
+					"height": 17,
+					"text": "ZIP Code"
+				},
+				"Field4": {
+					"type": "input",
+					"top": 166,
+					"left": 456,
+					"width": 149,
+					"height": 17,
+					"dataSource": "phone",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 166,
+					"left": 348,
+					"width": 99,
+					"height": 17,
+					"text": "Phone"
+				},
+				"Field5": {
+					"type": "input",
+					"top": 216,
+					"left": 456,
+					"width": 149,
+					"height": 17,
+					"dataSource": "email",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 216,
+					"left": 348,
+					"width": 99,
+					"height": 17,
+					"text": "Email"
+				},
+				"Field6": {
+					"type": "input",
+					"top": 36,
+					"left": 152,
+					"width": 149,
+					"height": 17,
+					"dataSource": "ID",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 36,
+					"left": 44,
+					"width": 99,
+					"height": 17,
+					"text": "ID"
+				},
+				"Field7": {
+					"type": "input",
+					"top": 268,
+					"left": 456,
+					"width": 149,
+					"height": 17,
+					"dataSource": "private_phone",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text7": {
+					"type": "text",
+					"top": 268,
+					"left": 348,
+					"width": 99,
+					"height": 17,
+					"text": "Private Phone"
+				},
+				"Field8": {
+					"type": "input",
+					"top": 114,
+					"left": 152,
+					"width": 149,
+					"height": 17,
+					"dataSource": "title",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 114,
+					"left": 44,
+					"width": 99,
+					"height": 17,
+					"text": "Title"
+				},
+				"Field9": {
+					"type": "input",
+					"top": 335,
+					"left": 152,
+					"width": 149,
+					"height": 17,
+					"dataSource": "eyes_color",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text9": {
+					"type": "text",
+					"top": 335,
+					"left": 44,
+					"width": 99,
+					"height": 17,
+					"text": "Eyes"
+				},
+				"Field10": {
+					"type": "input",
+					"top": 90,
+					"left": 152,
+					"width": 149,
+					"height": 17,
+					"dataSource": "last_name",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text10": {
+					"type": "text",
+					"top": 90,
+					"left": 44,
+					"width": 99,
+					"height": 17,
+					"text": "Last Name"
+				},
+				"Field11": {
+					"type": "input",
+					"top": 140,
+					"left": 456,
+					"width": 149,
+					"height": 17,
+					"dataSource": "country",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text11": {
+					"type": "text",
+					"top": 140,
+					"left": 348,
+					"width": 99,
+					"height": 17,
+					"text": "Country"
+				},
+				"Field12": {
+					"type": "input",
+					"top": 63,
+					"left": 456,
+					"width": 149,
+					"height": 17,
+					"dataSource": "address2",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text12": {
+					"type": "text",
+					"top": 63,
+					"left": 348,
+					"width": 99,
+					"height": 17,
+					"text": "Address 2"
+				},
+				"Field13": {
+					"type": "input",
+					"top": 114,
+					"left": 456,
+					"width": 149,
+					"height": 17,
+					"dataSource": "city",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text13": {
+					"type": "text",
+					"top": 114,
+					"left": 348,
+					"width": 99,
+					"height": 17,
+					"text": "City"
+				},
+				"Field14": {
+					"type": "input",
+					"top": 191,
+					"left": 456,
+					"width": 149,
+					"height": 17,
+					"dataSource": "fax",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text14": {
+					"type": "text",
+					"top": 191,
+					"left": 348,
+					"width": 99,
+					"height": 17,
+					"text": "Fax"
+				},
+				"Field15": {
+					"type": "input",
+					"top": 242,
+					"left": 456,
+					"width": 149,
+					"height": 17,
+					"dataSource": "phone2",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text15": {
+					"type": "text",
+					"top": 242,
+					"left": 348,
+					"width": 99,
+					"height": 17,
+					"text": "Phone 2"
+				},
+				"Field16": {
+					"type": "input",
+					"top": 140,
+					"left": 152,
+					"width": 149,
+					"height": 17,
+					"dataSource": "birth_date",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text16": {
+					"type": "text",
+					"top": 140,
+					"left": 44,
+					"width": 99,
+					"height": 17,
+					"text": "Birth Date"
+				},
+				"Field17": {
+					"type": "input",
+					"top": 242,
+					"left": 152,
+					"width": 149,
+					"height": 17,
+					"dataSource": "creation_date",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text17": {
+					"type": "text",
+					"top": 242,
+					"left": 44,
+					"width": 99,
+					"height": 17,
+					"text": "Creation Date"
+				},
+				"Field18": {
+					"type": "input",
+					"top": 268,
+					"left": 152,
+					"width": 149,
+					"height": 17,
+					"dataSource": "modification_date",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text18": {
+					"type": "text",
+					"top": 268,
+					"left": 44,
+					"width": 99,
+					"height": 17,
+					"text": "Modification Date"
+				},
+				"Field19": {
+					"type": "input",
+					"top": 361,
+					"left": 152,
+					"width": 149,
+					"height": 17,
+					"dataSource": "height",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text19": {
+					"type": "text",
+					"top": 361,
+					"left": 44,
+					"width": 99,
+					"height": 17,
+					"text": "Height"
+				},
+				"Field30": {
+					"type": "input",
+					"top": 388,
+					"left": 152,
+					"width": 149,
+					"height": 17,
+					"dataSource": "weight",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text30": {
+					"type": "text",
+					"top": 388,
+					"left": 44,
+					"width": 99,
+					"height": 17,
+					"text": "Weight"
+				},
+				"Button": {
+					"type": "button",
+					"top": 440,
+					"left": 29,
+					"width": 93,
+					"height": 21,
+					"text": "Previous",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 440,
+					"left": 134,
+					"width": 93,
+					"height": 21,
+					"text": "Next",
+					"focusable": false,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 440,
+					"left": 512,
+					"width": 93,
+					"height": 21,
+					"text": "Save",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 440,
+					"left": 410,
+					"width": 93,
+					"height": 21,
+					"text": "Cancel",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Field31": {
+					"type": "input",
+					"top": 295,
+					"left": 456,
+					"width": 149,
+					"height": 17,
+					"dataSource": "mobile_phone",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text31": {
+					"type": "text",
+					"top": 295,
+					"left": 348,
+					"width": 99,
+					"height": 17,
+					"text": "Mobile"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Field20": {
+					"type": "input",
+					"top": 104,
+					"left": 17,
+					"width": 110,
+					"height": 17,
+					"dataSource": "DBID",
+					"textAlign": "center",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text20": {
+					"type": "text",
+					"top": 81,
+					"left": 17,
+					"width": 110,
+					"height": 17,
+					"textAlign": "center",
+					"text": "DBID"
+				},
+				"Field21": {
+					"type": "input",
+					"top": 104,
+					"left": 147,
+					"width": 110,
+					"height": 17,
+					"dataSource": "X",
+					"textAlign": "center",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text21": {
+					"type": "text",
+					"top": 81,
+					"left": 147,
+					"width": 110,
+					"height": 17,
+					"textAlign": "center",
+					"text": "X"
+				},
+				"Field22": {
+					"type": "input",
+					"top": 104,
+					"left": 277,
+					"width": 110,
+					"height": 17,
+					"dataSource": "Y",
+					"textAlign": "center",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text22": {
+					"type": "text",
+					"top": 81,
+					"left": 277,
+					"width": 110,
+					"height": 17,
+					"textAlign": "center",
+					"text": "Y"
+				},
+				"Field23": {
+					"type": "input",
+					"top": 104,
+					"left": 407,
+					"width": 110,
+					"height": 17,
+					"dataSource": "PNUB",
+					"textAlign": "center",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text23": {
+					"type": "text",
+					"top": 81,
+					"left": 407,
+					"width": 110,
+					"height": 17,
+					"textAlign": "center",
+					"text": "PNUB"
+				},
+				"Field24": {
+					"type": "input",
+					"top": 104,
+					"left": 537,
+					"width": 110,
+					"height": 17,
+					"dataSource": "AGHD",
+					"textAlign": "center",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text24": {
+					"type": "text",
+					"top": 81,
+					"left": 537,
+					"width": 110,
+					"height": 17,
+					"textAlign": "center",
+					"text": "AGHD"
+				},
+				"Field25": {
+					"type": "input",
+					"top": 154,
+					"left": 17,
+					"width": 110,
+					"height": 17,
+					"dataSource": "SID",
+					"textAlign": "center",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text25": {
+					"type": "text",
+					"top": 131,
+					"left": 17,
+					"width": 110,
+					"height": 17,
+					"textAlign": "center",
+					"text": "SID"
+				},
+				"Field26": {
+					"type": "input",
+					"top": 154,
+					"left": 147,
+					"width": 110,
+					"height": 17,
+					"dataSource": "page",
+					"textAlign": "center",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text26": {
+					"type": "text",
+					"top": 131,
+					"left": 147,
+					"width": 110,
+					"height": 17,
+					"textAlign": "center",
+					"text": "Page"
+				},
+				"Field27": {
+					"type": "input",
+					"top": 154,
+					"left": 277,
+					"width": 110,
+					"height": 17,
+					"dataSource": "step",
+					"textAlign": "center",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text27": {
+					"type": "text",
+					"top": 131,
+					"left": 277,
+					"width": 110,
+					"height": 17,
+					"textAlign": "center",
+					"text": "Step"
+				},
+				"Field28": {
+					"type": "input",
+					"top": 154,
+					"left": 407,
+					"width": 110,
+					"height": 17,
+					"dataSource": "number",
+					"textAlign": "center",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text28": {
+					"type": "text",
+					"top": 131,
+					"left": 407,
+					"width": 110,
+					"height": 17,
+					"textAlign": "center",
+					"text": "N°"
+				},
+				"Field29": {
+					"type": "input",
+					"top": 154,
+					"left": 537,
+					"width": 110,
+					"height": 17,
+					"dataSource": "cat",
+					"textAlign": "center",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text29": {
+					"type": "text",
+					"top": 131,
+					"left": 537,
+					"width": 110,
+					"height": 17,
+					"textAlign": "center",
+					"text": "Cat"
+				},
+				"Field32": {
+					"type": "input",
+					"top": 229,
+					"left": 103,
+					"width": 109,
+					"height": 17,
+					"dataSource": "value_a",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text32": {
+					"type": "text",
+					"top": 229,
+					"left": 25,
+					"width": 69,
+					"height": 17,
+					"text": "Value A"
+				},
+				"Field33": {
+					"type": "input",
+					"top": 280,
+					"left": 103,
+					"width": 109,
+					"height": 17,
+					"dataSource": "value_c",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text33": {
+					"type": "text",
+					"top": 280,
+					"left": 25,
+					"width": 69,
+					"height": 17,
+					"text": "Value C"
+				},
+				"Field34": {
+					"type": "input",
+					"top": 256,
+					"left": 103,
+					"width": 109,
+					"height": 17,
+					"dataSource": "value_b",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text34": {
+					"type": "text",
+					"top": 256,
+					"left": 25,
+					"width": 69,
+					"height": 17,
+					"text": "Value B"
+				},
+				"Field35": {
+					"type": "input",
+					"top": 229,
+					"left": 315,
+					"width": 109,
+					"height": 17,
+					"dataSource": "value_d",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text35": {
+					"type": "text",
+					"top": 229,
+					"left": 237,
+					"width": 69,
+					"height": 17,
+					"text": "Value D"
+				},
+				"Field36": {
+					"type": "input",
+					"top": 280,
+					"left": 315,
+					"width": 109,
+					"height": 17,
+					"dataSource": "value_f",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text36": {
+					"type": "text",
+					"top": 280,
+					"left": 237,
+					"width": 69,
+					"height": 17,
+					"text": "Value F"
+				},
+				"Field37": {
+					"type": "input",
+					"top": 256,
+					"left": 315,
+					"width": 109,
+					"height": 17,
+					"dataSource": "value_e",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text37": {
+					"type": "text",
+					"top": 256,
+					"left": 237,
+					"width": 69,
+					"height": 17,
+					"text": "Value E"
+				},
+				"Field38": {
+					"type": "input",
+					"top": 229,
+					"left": 527,
+					"width": 109,
+					"height": 17,
+					"dataSource": "value_g",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text38": {
+					"type": "text",
+					"top": 229,
+					"left": 449,
+					"width": 69,
+					"height": 17,
+					"text": "Value G"
+				},
+				"Field39": {
+					"type": "input",
+					"top": 280,
+					"left": 527,
+					"width": 109,
+					"height": 17,
+					"dataSource": "value_i",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text39": {
+					"type": "text",
+					"top": 280,
+					"left": 449,
+					"width": 69,
+					"height": 17,
+					"text": "Value I"
+				},
+				"Field40": {
+					"type": "input",
+					"top": 256,
+					"left": 527,
+					"width": 109,
+					"height": 17,
+					"dataSource": "value_h",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text40": {
+					"type": "text",
+					"top": 256,
+					"left": 449,
+					"width": 69,
+					"height": 17,
+					"text": "Value H"
+				},
+				"Variable1": {
+					"type": "pictureButton",
+					"top": 22,
+					"left": 17,
+					"width": 48,
+					"height": 48,
+					"dataSource": "ZZ1",
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX First Record.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "pictureButton",
+					"top": 22,
+					"left": 87,
+					"width": 48,
+					"height": 48,
+					"dataSource": "ZZ2",
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Previous Record.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "pictureButton",
+					"top": 22,
+					"left": 157,
+					"width": 48,
+					"height": 48,
+					"dataSource": "ZZ3",
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Next Record.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "pictureButton",
+					"top": 22,
+					"left": 227,
+					"width": 48,
+					"height": 48,
+					"dataSource": "ZZ4",
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Last Record.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "pictureButton",
+					"top": 22,
+					"left": 297,
+					"width": 48,
+					"height": 48,
+					"dataSource": "ZZ5",
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Delete Record.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "pictureButton",
+					"top": 22,
+					"left": 367,
+					"width": 48,
+					"height": 48,
+					"dataSource": "ZZ6",
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Previous Page.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "pictureButton",
+					"top": 22,
+					"left": 437,
+					"width": 48,
+					"height": 48,
+					"dataSource": "ZZ7",
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Next Page.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "pictureButton",
+					"top": 22,
+					"left": 507,
+					"width": 48,
+					"height": 48,
+					"dataSource": "ZZ8",
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX OK.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "pictureButton",
+					"top": 22,
+					"left": 577,
+					"width": 48,
+					"height": 48,
+					"dataSource": "ZZ9",
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Cancel.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

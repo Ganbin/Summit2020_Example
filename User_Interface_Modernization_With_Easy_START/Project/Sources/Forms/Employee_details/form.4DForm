@@ -1,0 +1,536 @@
+﻿{
+	"destination": "detailScreen",
+	"shared": true,
+	"formSizeAnchor": "_setSize",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"employee_firstName": {
+					"type": "input",
+					"top": 32,
+					"left": 22,
+					"width": 176,
+					"height": 30,
+					"dataSource": "Form:C1466.entity.firstName",
+					"fontFamily": "Verdana",
+					"fontSize": 24,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"placeholder": "First Name",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/employee_firstName.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterEdit"
+					]
+				},
+				"FLabel_obj": {
+					"type": "input",
+					"top": 434,
+					"left": 0,
+					"width": 190,
+					"height": 21,
+					"visibility": "hidden",
+					"stroke": "#191970",
+					"fontFamily": "Verdana",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onAfterEdit"
+					]
+				},
+				"employee_invoicesLength": {
+					"type": "input",
+					"top": 254,
+					"left": 22,
+					"width": 256,
+					"height": 30,
+					"dataSource": "Form:C1466.entity.invoices.length",
+					"textAlign": "left",
+					"fontFamily": "Verdana",
+					"fontSize": 24,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"placeholder": "Invoice Sell",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/employee_invoicesLength.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterEdit"
+					]
+				},
+				"employee_lastName": {
+					"type": "input",
+					"top": 32,
+					"left": 215,
+					"width": 176,
+					"height": 30,
+					"dataSource": "Form:C1466.entity.lastName",
+					"fontFamily": "Verdana",
+					"fontSize": 24,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"placeholder": "Last Name",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/employee_lastName.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterEdit"
+					]
+				},
+				"employee_manager": {
+					"type": "input",
+					"top": 32,
+					"left": 582,
+					"width": 256,
+					"height": 30,
+					"dataSource": "Form:C1466.managerName",
+					"fontFamily": "Verdana",
+					"fontSize": 24,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"placeholder": "Manager",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/employee_manager.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterEdit"
+					]
+				},
+				"employee_birthDate": {
+					"type": "input",
+					"top": 32,
+					"left": 408,
+					"width": 156,
+					"height": 30,
+					"dataSource": "Form:C1466.entity.birthDate",
+					"dataSourceTypeHint": "date",
+					"fontFamily": "Verdana",
+					"fontSize": 24,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"placeholder": "Birth Date",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/employee_birthDate.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterEdit"
+					]
+				},
+				"employee_address": {
+					"type": "input",
+					"top": 103,
+					"left": 22,
+					"width": 256,
+					"height": 30,
+					"dataSource": "Form:C1466.entity.more_infos.address",
+					"fontFamily": "Verdana",
+					"fontSize": 24,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"placeholder": "Address",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/employee_address.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterEdit"
+					]
+				},
+				"employee_city": {
+					"type": "input",
+					"top": 103,
+					"left": 302,
+					"width": 256,
+					"height": 30,
+					"dataSource": "Form:C1466.entity.more_infos.city",
+					"fontFamily": "Verdana",
+					"fontSize": 24,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"placeholder": "City",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/employee_city.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterEdit"
+					]
+				},
+				"employee_country": {
+					"type": "input",
+					"top": 103,
+					"left": 582,
+					"width": 256,
+					"height": 30,
+					"dataSource": "Form:C1466.entity.more_infos.country",
+					"fontFamily": "Verdana",
+					"fontSize": 24,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"placeholder": "Country",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/employee_country.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterEdit"
+					]
+				},
+				"employee_phone": {
+					"type": "input",
+					"top": 174,
+					"left": 22,
+					"width": 216,
+					"height": 30,
+					"dataSource": "Form:C1466.entity.more_infos.phone",
+					"fontFamily": "Verdana",
+					"fontSize": 24,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"placeholder": "Phone",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/employee_phone.4dm",
+					"events": [
+						"onLoad",
+						"onDoubleClick",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onAfterEdit"
+					]
+				},
+				"_setSize": {
+					"type": "rectangle",
+					"top": 562,
+					"left": 907,
+					"width": 33,
+					"height": 26,
+					"visibility": "hidden",
+					"fill": "#DC143C",
+					"stroke": "transparent"
+				},
+				"zoomPhone_btn": {
+					"type": "button",
+					"top": 174,
+					"left": 248,
+					"width": 32,
+					"height": 32,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/zoom.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/zoomPhone_btn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"lines_lb": {
+					"type": "listbox",
+					"top": 302,
+					"left": 0,
+					"width": 863,
+					"height": 279,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"listboxType": "collection",
+					"focusable": false,
+					"movableRows": false,
+					"dataSource": "Form:C1466.entity.invoices",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "automatic",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"alternateFill": "#D2E3FF",
+					"fontFamily": "Verdana",
+					"fontSize": 18,
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470.HRID",
+							"width": 150,
+							"minWidth": 100,
+							"maxWidth": 1000,
+							"enterable": false,
+							"alternateFill": "#D2E3FF",
+							"fontFamily": "Verdana",
+							"fontSize": 18,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Invoice Number",
+								"stroke": "#191970",
+								"textAlign": "left",
+								"fontFamily": "Verdana",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer1",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Verdana",
+								"fontSize": 18
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "This:C1470.creationDate",
+							"dataSourceTypeHint": "date",
+							"width": 100,
+							"minWidth": 40,
+							"maxWidth": 150,
+							"enterable": false,
+							"alternateFill": "#D2E3FF",
+							"textAlign": "right",
+							"fontFamily": "Verdana",
+							"fontSize": 18,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Date",
+								"stroke": "#191970",
+								"textAlign": "right",
+								"fontFamily": "Verdana",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer2",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Verdana",
+								"fontSize": 18
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "String:C10(Time:C179(This:C1470.creationTime);HH MM:K7:2)",
+							"width": 60,
+							"minWidth": 30,
+							"maxWidth": 100,
+							"alternateFill": "#D2E3FF",
+							"textAlign": "right",
+							"fontFamily": "Verdana",
+							"fontSize": 18,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Time",
+								"stroke": "#191970",
+								"textAlign": "right",
+								"fontFamily": "Verdana",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer4",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Verdana",
+								"fontSize": 18
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "This:C1470.priceTotal",
+							"dataSourceTypeHint": "number",
+							"width": 200,
+							"minWidth": 50,
+							"maxWidth": 800,
+							"enterable": false,
+							"numberFormat": "###'###'###'##0.00 $",
+							"alternateFill": "#D2E3FF",
+							"fontFamily": "Verdana",
+							"fontSize": 18,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Price",
+								"stroke": "#191970",
+								"textAlign": "right",
+								"fontFamily": "Verdana",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer3",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Verdana",
+								"fontSize": 18
+							}
+						}
+					]
+				},
+				"employee_company": {
+					"type": "input",
+					"top": 174,
+					"left": 302,
+					"width": 236,
+					"height": 30,
+					"dataSource": "Form:C1466.entity.company.name",
+					"fontFamily": "Verdana",
+					"fontSize": 24,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"placeholder": "Company",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/employee_company.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterEdit"
+					]
+				},
+				"Check Box": {
+					"type": "checkbox",
+					"top": 5,
+					"left": 793,
+					"width": 70,
+					"height": 12,
+					"dataSource": "Form:C1466.isFired",
+					"text": "Fired",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"bigOp_btn": {
+					"type": "input",
+					"left": 698,
+					"top": 261,
+					"width": 140,
+					"height": 23,
+					"dataSourceTypeHint": "picture",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"method": "ObjectMethods/bigOp_btn.4dm",
+					"events": [
+						"onLoad",
+						"onMouseUp",
+						"onClick",
+						"onMouseEnter",
+						"onMouseLeave"
+					],
+					"dropping": "none",
+					"dragging": "none"
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

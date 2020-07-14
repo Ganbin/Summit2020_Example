@@ -1,0 +1,153 @@
+﻿{
+	"destination": "detailScreen",
+	"shared": true,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Rectangle",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable": {
+					"type": "input",
+					"top": 0,
+					"left": 10,
+					"width": 110,
+					"height": 93,
+					"dataSource": "Form:C1466.article.qty",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 56,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onAfterEdit"
+					]
+				},
+				"addQty_btn": {
+					"type": "input",
+					"top": 80,
+					"left": 70,
+					"width": 50,
+					"height": 50,
+					"dataSourceTypeHint": "picture",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 24,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"method": "ObjectMethods/addQty_btn.4dm",
+					"events": [
+						"onLoad",
+						"onMouseUp",
+						"onClick",
+						"onMouseEnter",
+						"onMouseLeave"
+					]
+				},
+				"removeQty_btn": {
+					"type": "input",
+					"top": 80,
+					"left": 10,
+					"width": 50,
+					"height": 50,
+					"dataSourceTypeHint": "picture",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 24,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"method": "ObjectMethods/removeQty_btn.4dm",
+					"events": [
+						"onLoad",
+						"onMouseUp",
+						"onClick",
+						"onMouseEnter",
+						"onMouseLeave"
+					]
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 166,
+					"left": 106,
+					"width": 24,
+					"height": 24,
+					"visibility": "hidden",
+					"fill": "#DC143C",
+					"stroke": "transparent"
+				},
+				"deleteArticle_btn": {
+					"type": "input",
+					"top": 140,
+					"left": 10,
+					"width": 110,
+					"height": 50,
+					"dataSourceTypeHint": "picture",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 24,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"method": "ObjectMethods/deleteArticle_btn.4dm",
+					"events": [
+						"onLoad",
+						"onMouseUp",
+						"onClick",
+						"onMouseEnter",
+						"onMouseLeave"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,296 @@
+﻿{
+	"destination": "detailScreen",
+	"windowMinWidth": 600,
+	"windowMinHeight": 300,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": -7,
+					"left": -6,
+					"width": 1001,
+					"height": 682,
+					"stroke": "transparent",
+					"sizingX": "grow",
+					"sizingY": "grow"
+				}
+			}
+		},
+		{
+			"objects": {
+				"_setSize": {
+					"type": "rectangle",
+					"top": 630,
+					"left": 940,
+					"width": 20,
+					"height": 20,
+					"strokeWidth": 0,
+					"fill": "#ff0000",
+					"stroke": "transparent",
+					"visibility": "hidden",
+					"sizingY": "move",
+					"sizingX": "move"
+				},
+				"items_lb": {
+					"type": "listbox",
+					"top": 40,
+					"left": 10,
+					"width": 240,
+					"height": 570,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"showHeaders": false,
+					"dataSource": "Form:C1466.items",
+					"currentItemSource": "Form:C1466.details.entity",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"alternateFill": "#B8E3F3",
+					"method": "ObjectMethods/items_lb.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"borderStyle": "none",
+					"columns": [
+						{
+							"name": "Column1",
+							"width": 225,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Header1"
+							},
+							"footer": {
+								"name": "Footer1",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"details_sf": {
+					"type": "subform",
+					"top": 40,
+					"left": 260,
+					"width": 700,
+					"height": 570,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.details",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
+				},
+				"save_btn": {
+					"type": "input",
+					"top": 620,
+					"left": 845,
+					"width": 110,
+					"height": 20,
+					"dataSourceTypeHint": "picture",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"method": "ObjectMethods/save_btn.4dm",
+					"events": [
+						"onLoad",
+						"onMouseUp",
+						"onClick",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onMouseEnter",
+						"onMouseLeave"
+					],
+					"sizingX": "move",
+					"sizingY": "move"
+				},
+				"add_btn": {
+					"type": "input",
+					"top": 615,
+					"left": 10,
+					"width": 32,
+					"height": 32,
+					"dataSourceTypeHint": "picture",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"method": "ObjectMethods/add_btn.4dm",
+					"events": [
+						"onLoad",
+						"onMouseUp",
+						"onClick",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onMouseEnter",
+						"onMouseLeave"
+					]
+				},
+				"del_btn": {
+					"type": "input",
+					"top": 615,
+					"left": 51,
+					"width": 32,
+					"height": 32,
+					"dataSourceTypeHint": "picture",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"method": "ObjectMethods/del_btn.4dm",
+					"events": [
+						"onLoad",
+						"onMouseUp",
+						"onClick",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onMouseEnter",
+						"onMouseLeave"
+					]
+				},
+				"edit_btn": {
+					"type": "input",
+					"top": 615,
+					"left": 92,
+					"width": 32,
+					"height": 32,
+					"dataSourceTypeHint": "picture",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"method": "ObjectMethods/edit_btn.4dm",
+					"events": [
+						"onLoad",
+						"onMouseUp",
+						"onClick",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onMouseEnter",
+						"onMouseLeave"
+					]
+				},
+				"actions_btn": {
+					"type": "input",
+					"top": 621,
+					"left": 260,
+					"width": 80,
+					"height": 20,
+					"dataSourceTypeHint": "picture",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"method": "ObjectMethods/actions_btn.4dm",
+					"events": [
+						"onLoad",
+						"onMouseUp",
+						"onClick",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onMouseEnter",
+						"onMouseLeave"
+					],
+					"sizingY": "move"
+				},
+				"AJUI_Banner": {
+					"type": "input",
+					"top": 759,
+					"left": 586,
+					"width": 206,
+					"height": 129,
+					"visibility": "hidden",
+					"dataSourceTypeHint": "picture",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"method": "ObjectMethods/AJUI_Banner.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"modules_btn": {
+					"type": "input",
+					"top": 5,
+					"left": 10,
+					"width": 500,
+					"height": 30,
+					"dataSourceTypeHint": "picture",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"dragging": "none",
+					"method": "ObjectMethods/modules_btn.4dm",
+					"events": [
+						"onLoad",
+						"onMouseUp",
+						"onClick",
+						"onMouseEnter",
+						"onMouseLeave",
+						"onMouseMove"
+					]
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"formSizeAnchor": "_setSize"
+}

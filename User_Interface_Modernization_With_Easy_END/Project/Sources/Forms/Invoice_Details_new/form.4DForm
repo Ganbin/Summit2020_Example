@@ -1,0 +1,317 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"top": 10,
+					"left": 10,
+					"width": 120,
+					"height": 17,
+					"textAlign": "right",
+					"text": "HRID"
+				},
+				"ID": {
+					"type": "input",
+					"top": 10,
+					"left": 140,
+					"width": 200,
+					"height": 17,
+					"dataSource": "Form:C1466.entity.HRID",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 40,
+					"left": 10,
+					"width": 120,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Creation"
+				},
+				"ID1": {
+					"type": "input",
+					"top": 40,
+					"left": 140,
+					"width": 200,
+					"height": 17,
+					"dataSource": "String:C10(Form:C1466.entity.creationDate;System date abbreviated:K1:2)+\" at \"+String:C10(Time:C179(Form:C1466.entity.creationTime);HH MM:K7:2)",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"lines_lb": {
+					"type": "listbox",
+					"top": 100,
+					"left": 140,
+					"width": 550,
+					"height": 370,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"movableRows": false,
+					"dataSource": "Form:C1466.entity.lines",
+					"scrollbarHorizontal": "automatic",
+					"alternateFill": "#EFEFEF",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 14,
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470.product.name",
+							"width": 321,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"alternateFill": "#EFEFEF",
+							"fontFamily": ".SF NS Text",
+							"fontSize": 14,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Product",
+								"fontFamily": ".SF NS Text",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Footer1",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": ".SF NS Text",
+								"fontSize": 14
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "This:C1470.quantity",
+							"dataSourceTypeHint": "number",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"alternateFill": "#EFEFEF",
+							"textAlign": "right",
+							"fontFamily": ".SF NS Text",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Qty",
+								"fontFamily": ".SF NS Text",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Footer2",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": ".SF NS Text",
+								"fontSize": 14
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "This:C1470.price",
+							"dataSourceTypeHint": "number",
+							"width": 154,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "$ ###'###'##0,00",
+							"alternateFill": "#EFEFEF",
+							"textAlign": "right",
+							"fontFamily": ".SF NS Text",
+							"fontSize": 14,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Price",
+								"fontFamily": ".SF NS Text",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Footer3",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": ".SF NS Text",
+								"fontSize": 14
+							}
+						}
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 100,
+					"left": 10,
+					"width": 120,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Lines"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 487,
+					"left": 410,
+					"width": 120,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Total Price",
+					"sizingX": "move",
+					"sizingY": "move"
+				},
+				"ID2": {
+					"type": "input",
+					"top": 487,
+					"left": 540,
+					"width": 150,
+					"height": 17,
+					"dataSource": "Form:C1466.entity.priceTotal",
+					"dataSourceTypeHint": "number",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$ ###'###'##0,00",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					],
+					"sizingX": "move",
+					"sizingY": "move"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 70,
+					"left": 10,
+					"width": 120,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Status"
+				},
+				"ID3": {
+					"type": "input",
+					"top": 70,
+					"left": 140,
+					"width": 200,
+					"height": 17,
+					"dataSource": "Form:C1466.status",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"method": "method.4dm",
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

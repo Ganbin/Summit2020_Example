@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="7">
+	<com.4d>
+		<deployment>
+			<options/>
+		</deployment>
+		<general execute_host_database_event="true" startup_environnement="0"/>
+		<compiler>
+			<options initialize_local_variables="1"/>
+		</compiler>
+	</com.4d>
+</preferences>
